@@ -1,0 +1,1 @@
+Ce fichier a été créé pour s'assurer que le répertoire 'raw' existe.

@@ -1,23 +1,39 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
 
+    <!-- Permissions nécessaires à l'application -->
+        <uses-permission android:name="android.permission.INTERNET" /> <!-- Accès à Internet -->
+        <uses-permission android:name="android.permission.VIBRATE" /> <!-- Accès au vibreur -->
+
+
+    <!-- Déclaration de l'application -->
+
+    <!-- Configuration générale de l'application : icônes, nom, thème, support RTL, classe Application personnalisée, et règles/sauvegarde des données. -->
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
-        android:name=".EvaluationDiiageKotlinApplication"
+        android:name=".EvaluationKotlinPerroudApplication"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.EvaluationKotlinPerroud">
+
+        <!-- Déclaration de l'activité principale -->
+        <!-- Définit l’activité principale, son accessibilité et son thème. -->
+
         <activity
             android:name=".MainActivity"
             android:exported="true"
             android:theme="@style/Theme.EvaluationKotlinPerroud">
+
+            <!-- Filtre d'intent pour définir l'activité de lancement -->
+            <!-- Indique que cette activité est le point d’entrée et qu’elle apparaît dans le lanceur d’applications. -->
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
