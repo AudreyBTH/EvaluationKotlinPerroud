@@ -17,6 +17,11 @@
             <option value="$PROJECT_DIR$/core/system" />
             <option value="$PROJECT_DIR$/core/ui" />
             <option value="$PROJECT_DIR$/features" />
+            <option value="$PROJECT_DIR$/features/anime" />
+            <option value="$PROJECT_DIR$/features/anime/api" />
+            <option value="$PROJECT_DIR$/features/anime/data" />
+            <option value="$PROJECT_DIR$/features/anime/domain" />
+            <option value="$PROJECT_DIR$/features/anime/ui" />
             <option value="$PROJECT_DIR$/features/featureModel" />
             <option value="$PROJECT_DIR$/features/featureModel/data" />
             <option value="$PROJECT_DIR$/features/featureModel/domain" />
