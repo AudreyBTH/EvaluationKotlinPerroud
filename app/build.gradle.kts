@@ -64,4 +64,5 @@ dependencies {
     implementation(project(":features:featureModel:domain"))
     implementation(project(":features:featureModel:ui"))
 
+
 }
