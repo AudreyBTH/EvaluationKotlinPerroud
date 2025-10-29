@@ -34,3 +34,7 @@ include(":features:featureModel:data")
 include(":features:featureModel:domain")
 include(":features:featureModel:ui")
 
+include(":features:anime:api")
+include(":features:anime:data")
+include(":features:anime:domain")
+include(":features:anime:ui")

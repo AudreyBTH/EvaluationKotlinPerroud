@@ -49,11 +49,18 @@ dependencies {
     implementation(libs.androidx.compose.ui.graphics)
     implementation(libs.androidx.compose.ui.tooling.preview)
     implementation(libs.androidx.compose.material3)
+    implementation(libs.firebase.crashlytics.buildtools)
     androidTestImplementation(platform(libs.androidx.compose.bom))
     implementation(project.dependencies.platform(libs.koin.bom))
     implementation(libs.bundles.koin)
     debugImplementation(libs.androidx.compose.ui.tooling)
+    implementation(libs.androidx.navigation.compose)
 
+    implementation(libs.ktor.client.core)
+    implementation(libs.ktor.client.cio)
+    implementation(libs.ktor.client.content.negotiation)
+    implementation(libs.ktor.serialization.kotlinx.json)
+    implementation("io.ktor:ktor-client-android:3.3.1")
 
     implementation(project(":core:data"))
     implementation(project(":core:ui"))
@@ -63,6 +70,11 @@ dependencies {
     implementation(project(":features:featureModel:data"))
     implementation(project(":features:featureModel:domain"))
     implementation(project(":features:featureModel:ui"))
+
+    implementation(project(":features:anime:api"))
+    implementation(project(":features:anime:data"))
+    implementation(project(":features:anime:domain"))
+    implementation(project(":features:anime:ui"))
 
 
 }

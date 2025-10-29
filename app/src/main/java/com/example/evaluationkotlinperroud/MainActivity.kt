@@ -1,5 +1,6 @@
 package com.example.evaluationkotlinperroud
 
+import android.annotation.SuppressLint
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
@@ -11,6 +12,8 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
+import com.example.evaluationkotlinperroud.navigation.AnimeNavHost
+
 import com.example.evaluationkotlinperroud.ui.theme.EvaluationKotlinPerroudTheme
 
 class MainActivity : ComponentActivity() {
@@ -19,29 +22,11 @@ class MainActivity : ComponentActivity() {
         enableEdgeToEdge()
         setContent {
             EvaluationKotlinPerroudTheme {
-                Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    Greeting(
-                        name = "Android",
-                        modifier = Modifier.padding(innerPadding)
-                    )
-                }
+
+                AnimeNavHost()
+
             }
         }
     }
 }
 
-@Composable
-fun Greeting(name: String, modifier: Modifier = Modifier) {
-    Text(
-        text = "Hello $name!",
-        modifier = modifier
-    )
-}
-
-@Preview(showBackground = true)
-@Composable
-fun GreetingPreview() {
-    EvaluationKotlinPerroudTheme {
-        Greeting("Android")
-    }
-}
