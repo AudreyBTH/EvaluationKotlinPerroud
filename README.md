@@ -14,7 +14,8 @@ CleanArchi faite ainsi que la gestion de la navigation.
 Commentaires par KDoc présents dans le code.
 Récupération de données par API : API utilisée => API de Jikan.
 Présence de featureModel (créée lors de l'init du projet).
-Gestion des gradles et du setting
+Gestion des gradles et du setting.
+Présence du module core.
 
 
 
