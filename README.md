@@ -2,7 +2,7 @@
 
 ## Description du projet
 
-Il es'agit d'un screen sur lequel nous retrouverons une liste de card d'animation japonaise, avec leurs information et un bouton like.
+L'application ce lance sur une page (One page) très simple. Il s'agit d'un screen sur lequel nous retrouverons une liste de card d'animation japonaise, avec leurs information et un bouton like.
 
 ## Information Projet Global et Fonctionnalité
 
