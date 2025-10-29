@@ -50,6 +50,7 @@ dependencies {
 
     implementation("androidx.lifecycle:lifecycle-viewmodel-compose:2.9.4")
 
+    implementation(project(":core:system"))
     implementation(project(":features:anime:data"))
     implementation(project(":features:anime:domain"))
 }

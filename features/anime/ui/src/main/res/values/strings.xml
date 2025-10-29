@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="unlike">Ne plus Aimer</string>
+    <string name="like">Aimer</string>
+    <string name="saison">Saison : </string>
+    <string name="ann_e">Année : </string>
+    <string name="pisodes">Épisodes : </string>
+</resources>

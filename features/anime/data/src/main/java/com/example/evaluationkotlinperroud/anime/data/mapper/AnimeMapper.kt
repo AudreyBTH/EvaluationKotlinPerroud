@@ -8,6 +8,11 @@ import com.example.evaluationkotlinperroud.anime.data.remote.TitleDto
 import com.example.evaluationkotlinperroud.anime.data.remote.ImagesDto
 import com.example.evaluationkotlinperroud.anime.data.remote.JpgDto
 
+/**
+ * Convertit un [AnimeDto] (objet reçu de l’API) en modèle de domaine [Anime].
+ *
+ * @return Un objet [Anime] prêt à être utilisé dans la logique métier.
+ */
 
 fun AnimeDto.toDomain() = Anime(
     mal_id = mal_id,
@@ -18,6 +23,11 @@ fun AnimeDto.toDomain() = Anime(
     episodes = episodes
 )
 
+/**
+ * Convertit un [AnimeEntity] (entité de la base locale) en modèle de domaine [Anime].
+ *
+ * @return Un objet [Anime] utilisable dans la couche de présentation.
+ */
 fun AnimeEntity.toDomain() = Anime(
     mal_id = mal_id,
     titles = listOf(Title("Default", title)),
@@ -27,6 +37,11 @@ fun AnimeEntity.toDomain() = Anime(
     episodes = episodes
 )
 
+/**
+ * Convertit un [Anime] (modèle de domaine) en [AnimeDto] pour un envoi vers l’API.
+ *
+ * @return Un objet [AnimeDto] contenant les informations du domaine.
+ */
 
 fun Anime.toDto() = AnimeDto(
     mal_id = mal_id,
@@ -37,6 +52,11 @@ fun Anime.toDto() = AnimeDto(
     episodes = episodes
 )
 
+/**
+ * Convertit un [AnimeDto] (objet API) en [AnimeEntity] pour un stockage local via Room.
+ *
+ * @return Un objet [AnimeEntity] prêt à être inséré dans la base de données.
+ */
 fun AnimeDto.toEntity() = AnimeEntity(
     mal_id = mal_id,
     title = titles.firstOrNull()?.title ?: "Unknown",

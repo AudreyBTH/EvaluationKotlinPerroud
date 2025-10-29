@@ -1,19 +1,26 @@
 package com.example.evaluationkotlinperroud.navigation
 
 import androidx.compose.runtime.Composable
-import androidx.lifecycle.viewmodel.compose.viewModel
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import com.example.evaluationkotlinperroud.anime.ui.anime.AnimeScreen
-import com.example.evaluationkotlinperroud.anime.ui.anime.AnimeViewModel
 
-// Routes pour la navigation
+/**
+ * Définit les routes pour la navigation de l'application.
+ *
+ * @property route La chaîne représentant la route.
+ */
 sealed class AnimeRoutes(val route: String) {
     object AnimeScreen : AnimeRoutes("anime_screen")
 }
 
+/**
+ * Hôte de navigation composable pour l'application.
+ *
+ * @param navController Contrôleur de navigation utilisé pour gérer la navigation entre les écrans.
+ */
 @Composable
 fun AnimeNavHost(navController: NavHostController = rememberNavController()) {
     NavHost(

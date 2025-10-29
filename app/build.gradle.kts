@@ -60,7 +60,7 @@ dependencies {
     implementation(libs.ktor.client.cio)
     implementation(libs.ktor.client.content.negotiation)
     implementation(libs.ktor.serialization.kotlinx.json)
-    implementation("io.ktor:ktor-client-android:3.3.1")
+    implementation(libs.ktor.client.android)
 
     implementation(project(":core:data"))
     implementation(project(":core:ui"))
@@ -76,5 +76,9 @@ dependencies {
     implementation(project(":features:anime:domain"))
     implementation(project(":features:anime:ui"))
 
+    // Room (for DI setup in Module.kt)
+    implementation(libs.androidx.room.runtime)
+    implementation(libs.androidx.room.ktx)
 
 }
+ 
